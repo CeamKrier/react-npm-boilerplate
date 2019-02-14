@@ -1,11 +1,14 @@
 # my-awesome-package
 
 ```diff
-- Please consider to remove following paragraph and as well as this one before publishing your work. The next, an introduction to boilerplate.
+- Please consider to remove following paragraphs and as well as this one before publishing your work. 
+  The next, an introduction to boilerplate.
 
-- The aim of this boilerplate is to accelarate your development via bypassing configuration of crucial tools and structuring folder hierarhcy in a solid way.
+- The aim of this boilerplate is to accelarate your development via bypassing configuration of crucial
+  tools and structuring folder hierarhcy in a solid way.
 
-- Local debugging, testing and building is ready to use. All you need to do is pasting your base code into appropriate sections.
+- Local debugging, testing and building is ready to use. All you need to do is pasting your base code 
+  into appropriate sections.
 
 - Happy coding!
 ```
