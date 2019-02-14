@@ -2,13 +2,13 @@
 
 ```diff
 - Please consider to remove following paragraphs and as well as this one before publishing your work. 
-  The next, an introduction to boilerplate.
+-  The next, an introduction to boilerplate.
 
 - The aim of this boilerplate is to accelarate your development via bypassing configuration of crucial
-  tools and structuring folder hierarhcy in a solid way.
+-  tools and structuring folder hierarhcy in a solid way.
 
 - Local debugging, testing and building is ready to use. All you need to do is pasting your base code 
-  into appropriate sections.
+-  into appropriate sections.
 
 - Happy coding!
 ```
