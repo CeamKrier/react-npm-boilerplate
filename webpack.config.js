@@ -1,38 +1,31 @@
 const path = require('path')
-module.exports = {
 
-  entry: './development/demo/root.js',
+module.exports = {
+  entry: './src/dev/showcase.tsx',
+  mode: 'development',
   output: {
-    path: path.resolve(__dirname),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/'
   },
-  mode: 'production',
-  performance: {
-    hints: false
-  },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: '/node_modules',
-        loader: 'babel-loader',
-        query: {
-          presets: ['@babel/preset-env', '@babel/preset-react']
-        }
+        test: /\.tsx$/,
+        loader: 'ts-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader'
-      }/* ,
-      {
-        test: /\.scss$/,
-        loader: 'style-loader!css-loader!sass-loader'
-      } */
+        use: ['style-loader', 'css-loader']
+      }
     ]
   },
+  resolve: {
+    extensions: ['.tsx', '.js']
+  },
   devServer: {
-    contentBase: './development/demo/',
-    historyApiFallback: true
+    contentBase: path.resolve(__dirname, 'src', 'dev')
   }
 }
