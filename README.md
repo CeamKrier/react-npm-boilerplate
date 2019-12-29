@@ -1,53 +1,42 @@
-# my-awesome-package
+# react-npm-boilerplate
 
-```diff
-- Please consider to remove following paragraphs and as well as this one before publishing your work. 
--  The next, an introduction to boilerplate.
-
-- The aim of this boilerplate is to accelarate your development via bypassing configuration of crucial
--  tools and structuring folder hierarhcy in a solid way.
-
-- Local debugging, testing and building is ready to use. All you need to do is pasting your base code 
--  into appropriate sections.
-
-- Happy coding!
-```
-
-A brief introduction of your package goes here.
+A brief introduction of your package goes here
 
 ## Installation
 
-
 ```
-npm install my-awesome-package
+npm install your-lib-name
 ```
 
 ## Usage
 
 ```javascript
-import Foo from 'my-awesome-package'
+import React from 'react'
+import LibName from 'your-lib-name'
 
-console.log('The rest is up for you!')
+const App = () => {
+
+  return (
+        <LibName 
+          text={text}
+         />
+  )
+}
 
 ```
 
+
+## API
+
+| Attribute  | Type       | Description          | Required |
+|------------|------------|----------------------|----------|
+| `attOne`   | `string`   | Text to be displayed | **Yes**  |
+| `attTwo`   | `function` | Callback function    | **Yes**  |
+| `attThree` | `boolean`  | Toggle something     | No       |
 
 
 ## Features
 Express your neat features down below for further clarification of your component's way of working.
-
-```javascript
-console.log('when you in doubt')
-```
-
-
-
-
-
-
-## Styling
-As default, < some random UI lib > has utilized on this component. It will render via that styling as default but you always can override it with your own css rules.
-
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
